@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Supply Chain Optimization Dashboard
 
-## Getting Started
+# Supply Chain Optimization Dashboard
 
-First, run the development server:
+## Overview
 
-```bash
+The **Supply Chain Optimization Dashboard** is a web application developed for **CABRA**, aimed at enhancing supply chain efficiency through machine learning simulations. The dashboard focuses on improving demand forecasting, optimizing inventory management, and refining route logistics to reduce costs and carbon footprint.
+
+## Features
+
+- **Improve Demand Forecasting**
+  - Simulate the use of historical sales data to predict future demand.
+  - Utilize models like ARIMA, LSTM, or Prophet (simulation only).
+
+- **Optimize Inventory Management**
+  - Reduce stockouts and overstock situations.
+  - Apply reinforcement learning and optimization algorithms (simulation) to recommend optimal stock levels.
+
+- **Route and Logistics Optimization**
+  - Optimize delivery routes to reduce transportation costs and carbon emissions.
+  - Use genetic algorithms and heuristics (simulation) for complex routing problems.
+
+- **Interactive Data Visualization**
+  - Display data using charts and graphs powered by Chart.js and react-chartjs-2.
+  - Include bar charts, line graphs, and pie charts for different datasets.
+
+- **Responsive Design**
+  - Fully responsive layout for desktops, tablets, and mobile devices.
+
+## Technologies Used
+
+- **Frontend Framework**: Next.js, React
+- **Programming Language**: TypeScript
+- **UI Styling**: Tailwind CSS
+- **Charts and Visualization**: Chart.js, react-chartjs-2
+- **Map Integration**: Leaflet, React-Leaflet
+
+## Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/supply-chain-optimization-dashboard.git
+   cd supply-chain-optimization-dashboard
+
+	2.	Install Dependencies
+
+npm install
+
+
+	3.	Run the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+	4.	Open the Application
+Navigate to http://localhost:3000 in your web browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Usage
 
-## Learn More
+	•	Dashboard Overview
+	•	View key metrics such as current inventory levels, predicted demand, and supply chain costs.
+	•	Demand Forecasting Module
+	•	Simulate demand prediction based on historical data.
+	•	Visualize predicted demand trends.
+	•	Inventory Management Simulation
+	•	See optimized inventory recommendations.
+	•	Visualize inventory status with bar charts.
+	•	Route and Logistics Optimization
+	•	Input start and end locations to simulate optimized delivery routes.
+	•	View routes on an interactive map with markers.
+	•	Optimization Metrics
+	•	Review estimated delivery time, cost savings, and CO2 emission reductions.
 
-To learn more about Next.js, take a look at the following resources:
+Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+	•	pages/: Contains Next.js page components.
+	•	components/: Reusable React components.
+	•	public/: Static assets like images and icons.
+	•	styles/: Global styles and CSS files.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Troubleshooting
 
-## Deploy on Vercel
+	•	Chart Rendering Issues
+	•	Ensure all necessary Chart.js elements are registered.
+	•	Check for correct data format in chart datasets.
+	•	Map Display Problems
+	•	Verify that Leaflet CSS is properly imported.
+	•	Confirm that markers are correctly configured with appropriate icons.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Future Enhancements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+	•	Implement Real Machine Learning Models
+	•	Integrate actual models for demand forecasting and route optimization.
+	•	Backend Integration
+	•	Connect to a backend service for data processing and storage.
+	•	User Authentication
+	•	Allow users to save preferences and access personalized data.
+
+Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+
+License
+
+This project is licensed under the MIT License.
+
+---
+
+Feel free to customize these `README.md` files further to suit your project's specific details and requirements. Good luck with your apps!
